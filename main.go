@@ -48,7 +48,7 @@ func (mapper *Mapping) visit(path string, fi os.FileInfo, err error) error {
 		return nil //
 	}
 
-	fileExt := []string{"*.html", "*.js", "CNAME"}
+	fileExt := []string{"*.html", "*.js", "CNAME", "*.md"}
 
 	for _, val := range fileExt {
 		matched, err := filepath.Match(val, fi.Name())
