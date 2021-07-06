@@ -44,7 +44,7 @@ func (mapper *Mapping) visit(path string, fi os.FileInfo, err error) error {
 	if err != nil {
 		return err
 	}
-	if !!fi.IsDir() {
+	if !fi.IsDir() {
 		return nil //
 	}
 
